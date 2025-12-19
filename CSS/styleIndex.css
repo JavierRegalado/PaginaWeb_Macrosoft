@@ -1,0 +1,59 @@
+.pagina_de_inicio{
+    background-image: url(header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header{
+    background-color: #a88c67b8 ;
+    display: flex;
+    justify-content: space-between; /* Usa Flexbox para alinear los elementos */
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+a :hover{
+color: blue;
+
+}
+
+.logo_perro{
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+
+}
+
+.Logo_de_usuario{
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block; /* Muestra los elementos de la lista horizontalmente */
+  margin-right: 20px;
+      /* Espacio entre los elementos del menú */
+}
+
+h1, h2, h3, h4{
+    color: white;
+
+}
+
+.cuerpo{
+    background-color: #a88c67;
+}

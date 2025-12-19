@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Donativos Amigos Peludos</title>
+        <link rel="stylesheet" href="../CSS/styleDonacion.css">
+    </head>
+    <body>
+        <header>
+            <div class="logoHeader">
+                <img src="../imagenes/logo_web.png" alt="Logo de la empresa">
+                <a href="Index2.0.html">Amigos Peludos</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Catalogo_Animalaes.html">Adopta</a>
+                    </li>
+                    <li>
+                        <a href="FormularioDonación.html">Dona</a>
+                    </li>
+                    <li>
+                        <a href="Voluntariado.html">Voluntariado</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logIn">
+                <button>EU|ES</button>
+                <a href="Registro.html"> Log In</a>
+                <img src="../imagenes/login.png" alt="Icono de usuario">
+            </div>
+        </header>
+        <div class="back">
+            <form>
+                <label for="tipodonativo">Tipo de donativo</label>
+                <select id="tipodonativo">
+                    <option>Objetos</option>
+                    <option>Dinero</option>
+                </select>
+                <br> <br>
+                <fieldset>
+                    <legend>Datos de objetos</legend>
+                    <label for="tipoobjeto">Que objeto desea donar?</label>
+                    <textarea rows="2" cols="20" wrap="hard" id="tipoobjeto">Escriba el objeto a donar</textarea>
+                    <br> <br>
+                    <label for="imagenobjeto">Imagen del obeto a donar</label>
+                    <input type="file" id="imagenobjeto">
+                    <br> <br>
+                    <button type="submit">Donar</button>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Datos de tarjeta</legend>
+                    <label for="cantidaddinero">cantidad a donar en euros</label>
+                    <input type="number" id="cantidaddinero" min="5" max="500">
+                    <br> <br>
+                    <label for="nombrebanco">Nombre del banco</label>
+                    <input type="text" id="nombrebanco">
+                    <br> <br>
+                    <label for="numtarjeta">Numero de tarjeta</label>
+                    <input type="number" id="numtarjeta">
+                    <br> <br>
+                    <label for="fechavencimiento">Fecha de vencimiento</label>
+                    <input type="date" id="fechavencimiento">
+                    <br> <br>
+                    <label for="cvv">CVV</label>
+                    <input type="text" pattern="^\d{3}$" inputmode="numeric" maxlength="3" id="cvv">
+                    <br> <br>
+                    <button type="submit">Donar</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

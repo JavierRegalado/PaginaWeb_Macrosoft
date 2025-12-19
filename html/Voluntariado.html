@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Voluntariado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Voluntariadocss.css">
+    </head>
+    <body>
+        <header>
+            <div class="logoHeader">
+                <img src="../imagenes/logo_web.png" alt="Logo de la empresa">
+                <a href="Index2.0.html">Amigos Peludos</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Catalogo_Animalaes.html">Adopta</a>
+                    </li>
+                    <li>
+                        <a href="FormularioDonación.html">Dona</a>
+                    </li>
+                    <li>
+                        <a href="Voluntariado.html">Voluntariado</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logIn">
+                <button>EU|ES</button>
+                <a href="Registro.html"> Log In</a>
+                <img src="../imagenes/login.png" alt="Icono de usuario">
+            </div>
+        </header>
+        <div class="formulario">
+            <form>
+                <fieldset>
+                    <legend>Para hacerse voluntario</legend>
+                    <p>Rellene los siguientes campos</p>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <textarea rows="1" cols="20" wrap="hard" id="nombre">Introduzca su nombre</textarea>
+                    <br> <br>
+                    <label for="DNI">DNI/NIE</label>
+                    <textarea rows="1" cols="20" wrap="hard" id="DNI">Introduzca su DNI/NIE</textarea>
+                    <br> <br>
+                    <label for="numeroTelefono">Numero de teléfono</label>
+                    <textarea rows="1" cols="20" wrap="hard" id="numeroTelefono">Introduzca su número</textarea>
+                    <br> <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Información adicional</legend>
+                    <label for="trabajoPrevio">¿ha trabajado anteriormente como voluntario?</label>
+                    <select id="trabajoPrevio">
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+                    <br> <br>
+                    <label for="perros">¿Ha tenido contacto previo con animales?</label>
+                    <select id="perros">
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>Tengo animales</option>
+                    </select>
+                    <br> <br>
+                    <label for="preferencia">¿Prefiere tratar con algún animal en específico?</label>
+                    <textarea rows="1" cols="30" wrap="hard" id="preferencia">En caso de que si, ¿cual?</textarea>
+                    <br> <br>
+                    <label for="alergia">¿Tiene alguna alergia?</label>
+                    <select id="alergia">
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+                    <br> <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

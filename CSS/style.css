@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:"Darker Grotesque", sans-serif;
+}
+.heroSection{
+    background-image: url(header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    height: 15vh;
+    background-color: #a88c67b8;
+    display: flex;
+    justify-content: space-between;
+}
+.logoHeader{
+    display: flex;
+    justify-content: start;
+    width: 30vw;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+.logoHeader img{
+    height: 10vh;
+    width: 10vh;
+}
+.logoHeader a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+}
+nav{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.logIn{
+    display: flex;
+    height: 100%;
+    width: 30vw;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    margin-right: 5vw;
+}
+.logIn a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.logIn button{
+    background-color: transparent;
+    border: 0px;
+    font-size: 1.7rem;
+    color: white;
+}
+.logIn img{
+    height: 8vh;
+
+}
+.textoEntrada{
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 5%;
+    color: white
+}
+.textoEntrada h1{
+    margin-top: 5%;
+    font-size: 6rem;
+    width: 80%;
+    font-weight:500;
+    line-height: 5rem;
+    ;
+}
+
+.textoEntrada h2{
+    font-size: 3rem;
+    width: 80%;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.textoEntrada button{
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    margin-top: 5%;
+    font-weight: 500;
+}
+.adoptSection{
+    height: 100vh;
+    background-color:  #a88c67b8;
+    display: flex;
+    color: white;
+}
+.infoAdopt{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+.adoptText{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+
+}
+.adoptText h2{
+    text-decoration: underline;
+    font-size: 4rem;
+}
+.adoptText p{
+    font-size: 2.8rem;
+}
+.adoptSection img{
+    width: 45%;
+}
+.AdoptBtn{
+    background-color: white;
+    margin-top: 5%;
+    font-size: 3.2rem;
+    border-radius: 50px;
+    width: 60%;
+    text-align: center;
+    border: 0.2rem solid black; 
+    align-self: center;   
+}
+.AdoptBtn a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.donaSection{
+    height: 100vh;
+    background-color:  #a88c67b8;
+    display: flex;
+    color: white;
+}
+.infoDona{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+.donaText{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+
+}
+.donaText h2{
+    text-decoration: underline;
+    font-size: 4rem;
+}
+.donaText p{
+    font-size: 2.8rem;
+}
+.donaSection img{
+    width: 45%;
+}
+.DonaBtn{
+    background-color: white;
+    margin-top: 5%;
+    font-size: 3.2rem;
+    border-radius: 50px;
+    width: 60%;
+    text-align: center;
+    border: 0.2rem solid black; 
+    align-self: center;   
+}
+.DonaBtn a{
+    text-decoration: none;
+    color: black;
+}
+.volunSection{
+    height: 100vh;
+    background-color:  #a88c67b8;
+    display: flex;
+}
+.infoVolun{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+.volunText{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+    color: white;
+
+}
+.volunText h2{
+    text-decoration: underline;
+    font-size: 4rem;
+}
+.volunText p{
+    font-size: 2.8rem;
+}
+.volunSection img{
+    width: 45%;
+}
+.VolunBtn{
+    background-color: white;
+    margin-top: 5%;
+    font-size: 3.2rem;
+    border-radius: 50px;
+    width: 60%;
+    text-align: center;
+    border: 0.2rem solid black; 
+    align-self: center;   
+}
+.VolunBtn a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: #67563f;
+    height: 50vh;
+    color: white;
+}
+.contenedorFooter{
+    padding-top: 3rem;
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+}
+.datoscontacto{
+    display: flex;
+    margin-left: 3rem;
+    flex-direction: column;
+    width: 25%;
+}
+.datoscontacto h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.datoscontacto p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.InformaciónFooter{
+    flex-direction: column;
+    width: 25%;
+}
+.InformaciónFooter h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.InformaciónFooter li{
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+.idiomasFooter{
+    display: flex;
+    margin-right: 3rem;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+.idiomasFooter h3{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.idiomasFooter img{
+    width: 8rem;
+    height: 4rem;
+
+}
+@media all and (max-width:768px){
+    .heroSection {
+        background-image: url(header.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        height: 12vh;
+        background-color: #a88c67b8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .logoHeader {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .logoHeader img {
+        height: 7vh;
+        width: 7vh;
+    }
+    .logoHeader a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+    }
+    nav{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+
+    }
+    nav ul li a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: white;
+    }
+    .logIn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logIn button {
+        background-color: transparent;
+        border: 0;
+        font-size: 0.8rem;
+    }
+    .logIn a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: white;
+    }
+    .logIn img {
+        height: 5vh;
+    }
+    .textoEntrada {
+        width: 90vw;
+        height: 85vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        text-align: center;
+        gap: 5%;
+    }
+    .textoEntrada h1 {
+        margin-top: 10%;
+        font-size: 3rem;
+        width: 100%;
+        font-weight: 500;
+        line-height: 3.5rem;
+        color: white;
+    }
+    .textoEntrada h2 {
+        font-size: 1.8rem;
+        width: 100%;
+        font-weight: 400;
+        line-height: 2.5rem;
+        color: white;
+    }
+    .textoEntrada button {
+        width: 70%;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-size: 1.6rem;
+        margin-top: 10%;
+        font-weight: 600;
+    }
+    .adoptSection,
+    .donaSection,
+    .volunSection {
+        height: auto;
+        background-color: #a88c67b8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .adoptSection img,
+    .donaSection img,
+    .volunSection img {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .infoAdopt,
+    .infoDona,
+    .infoVolun {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .adoptText,
+    .donaText,
+    .volunText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: white;
+    }
+    .adoptText h2,
+    .donaText h2,
+    .volunText h2 {
+        text-decoration: underline;
+        font-size: 2.5rem;
+    }
+    .adoptText p,
+    .donaText p,
+    .volunText p {
+        font-size: 1.6rem;
+    }
+    .AdoptBtn,
+    .DonaBtn,
+    .VolunBtn{
+        margin-top: 5%;
+        color: black;
+        font-size: 1.8rem;
+        border-radius: 40px;
+        width: 70%;
+        align-self: center;
+        margin-bottom: 5%;
+        border: 0.1rem solid black;
+    }
+    .AdoptBtn a,
+    .DonaBtn a,
+    .VolunBtn a{
+        color: black;
+        text-decoration: none;
+    }
+
+    footer {
+    background-color: #67563f;
+    padding: 1.5rem 0.5rem;
+    height: 35vh;
+    color: white;
+    }
+    .contenedorFooter {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        gap: 1rem;
+        padding: 0.5rem;
+        height: 25vh;
+    }
+    .datoscontacto,
+    .InformaciónFooter,
+    .idiomasFooter {
+        min-width: 100px;
+    }
+    .datoscontacto h3,
+    .InformaciónFooter h3,
+    .idiomasFooter h3 {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+        text-align: center;
+    }
+    .datoscontacto p,
+    .InformaciónFooter li {
+        font-size: 0.7rem;
+        list-style: none;
+        text-align: center;
+    }
+    .idiomasFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.3rem;
+    }
+
+    .idiomasFooter img {
+        width: 4.5rem;
+        height: 2.3rem;
+        margin-top: 0.3rem;
+    }
+    }
