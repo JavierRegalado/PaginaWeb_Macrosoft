@@ -57,3 +57,31 @@ h1, h2, h3, h4{
 .cuerpo{
     background-color: #a88c67;
 }
+
+.nav-links {
+  display: none; /* Escondemos los links por defecto en móvil */
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-toggle {
+  display: block; /* Mostramos el botón de hamburguesa */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Escondemos el botón de menú */
+  }
+
+  .nav-links {
+    display: flex; /* Mostramos los links */
+    flex-direction: row; /* Los ponemos uno al lado del otro */
+    width: auto;
+    gap: 20px;
+  }
+}
