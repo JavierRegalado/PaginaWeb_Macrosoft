@@ -8,137 +8,149 @@
     <link href="../CSS/Catalogo_Animales.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid text-center">
-        <div class="row">
-            <div class="col col-md-auto text-start">
-                <img src="../imagenes/logo_web.png" alt="Logo de la empresa" height="50" width="50">
-                <a href="Index2.0.html" class="text-decoration-none text-white fs-2">Amigos Peludos</a>
-            </div>
-            <nav class="col col-md-auto text-decoration-none text-start justify-content-between">
-                <ul>
-                    <li>
-                        <a href="Catalogo_Animalaes.html">Adopta</a>
-                    </li>
-                    <li>
-                        <a href="FormularioDonación.html">Dona</a>
-                    </li>
-                    <li>
-                        <a href="Voluntariado.html">Voluntariado</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="logIn">
-                <button>EU|ES</button>
-                <a href="Registro.html"> Log In</a>
-                <img src="../imagenes/login.png" alt="Icono de usuario">
-            </div>
-        </div>
-    </header>
-    <div class="container-fluid text-center titulo">
-        <h1 class="text-white">EN ADOPCION</h1>
+    <header>
+    <div class="logoHeader">
+        <img src="../imagenes/logo_web.png" alt="Logo de la empresa">
+        <a class="nav-link fs-1 d-none d-md-block" href="Index2.0.html">Amigos Peludos</a>
     </div>
     
-    <div class= "container-fluid margen-extra">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid justify-content-end"> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu" aria-controls="miMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="miMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 text-center"> 
+                    <li class="nav-item"><a class="nav-link fs-2" href="Catalogo_Animalaes.html">Adopta</a></li>
+                    <li class="nav-item"><a class="nav-link fs-2" href="FormularioDonación.html">Dona</a></li>
+                    <li class="nav-item"><a class="nav-link fs-2" href="Voluntariado.html">Voluntariado</a></li>
+                    
+                    <li class="nav-item d-lg-none mt-3 border-top pt-3">
+                        <a class="nav-link fs-3" href="#">EU | ES</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link fs-3" href="Registro.html">Log In 👤</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="logIn d-none d-lg-flex">
+        <button>EU|ES</button>
+        <a href="Registro.html">Log In</a>
+        <img src="../imagenes/login.png" alt="Icono de usuario">
+    </div>
+</header>
+
+    <div class="container-fluid text-center mt-4">
+        <div class="titulo mx-auto">
+            <h1 class="text-white m-0 p-2">EN ADOPCION</h1>
+        </div>
+    </div>
+    
+    <div class="container margen-extra mb-5">
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 justify-content-center">
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Bella.jpg" class="card-img-top" alt="Gato blanco" width="50" height="250">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Bella.jpg" class="card-img-top" alt="Gato blanco">
                     <div class="card-body">
                         <h5 class="card-title">Bella</h5>
-                        <p class="card-text text-black">Una gata fea con ganas de ser adoptada </p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <p class="card-text text-black">Una gata fea con ganas de ser adoptada</p>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Charlie.jpg" class="card-img-top" alt="Beagle" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Charlie.jpg" class="card-img-top" alt="Beagle">
                     <div class="card-body">
                         <h5 class="card-title">Charlie</h5>
                         <p class="card-text text-black">Es como el perrete de rastreator</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Enrique.jpg" class="card-img-top" alt="Pastor aleman" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Enrique.jpg" class="card-img-top" alt="Pastor aleman">
                     <div class="card-body">
                         <h5 class="card-title">Enrique</h5>
                         <p class="card-text text-black">Un pastor aleman mas aleman que el oktoberfest</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
         </div> 
-    </div>
-    <div class="container-fluid margen-extra">
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 justify-content-center">
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Luna.jpg" class="card-img-top" alt="Gato Siames" width="50" height="250">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Luna.jpg" class="card-img-top" alt="Gato Siames">
                     <div class="card-body">
                         <h5 class="card-title">Luna</h5>
                         <p class="card-text text-black">Gata siamesa con unos ojos mas azules que el mar</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Max.jpg" class="card-img-top" alt="Golden" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Max.jpg" class="card-img-top" alt="Golden">
                     <div class="card-body">
                         <h5 class="card-title">Max</h5>
                         <p class="card-text text-black">Se parece al perro de las peliculas de Bud</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Mia.jpg" class="card-img-top" alt="Gato esfinge" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Mia.jpg" class="card-img-top" alt="Gato esfinge">
                     <div class="card-body">
                         <h5 class="card-title">Mia</h5>
                         <p class="card-text text-black">Ni un solo pelo, parecida a los gatos sagrados del antiguo Egipto</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
         </div> 
-    </div>
-    <div class="container-fluid margen-extra">
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 justify-content-center">
             <div class="col">
-                <div class="card h-30" style="width: 18rem;">
-                    <img src="../imagenes/Rocky.jpg" class="card-img-top" alt="Pug" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Rocky.jpg" class="card-img-top" alt="Pug">
                     <div class="card-body">
                         <h5 class="card-title">Rocky</h5>
                         <p class="card-text text-black">Se llama asi porque nunca se rinde como el boxeador</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Simba.jpg" class="card-img-top" alt="Gato blanco" width="50" height="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Simba.jpg" class="card-img-top" alt="Gato blanco">
                     <div class="card-body">
                         <h5 class="card-title">Simba</h5>
                         <p class="card-text text-black">Es el rey del veterinario.</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-10" style="width: 18rem;">
-                    <img src="../imagenes/Topy.jpg" class="card-img-top" alt="Gato blanco" width="50" height="200"9>
+                <div class="card h-100 shadow-sm">
+                    <img src="../imagenes/Topy.jpg" class="card-img-top" alt="Gato blanco">
                     <div class="card-body">
                         <h5 class="card-title">Topy</h5>
                         <p class="card-text text-black">No para de escarvar es como un topillo</p>
-                        <a href="formularioAdop.html" class="btn btn-primary">Adoptame</a>
+                        <a href="formularioAdop.html" class="btn btn-primary w-100">Adoptame</a>
                     </div>
                 </div>
             </div>
         </div> 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

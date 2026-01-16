@@ -1,89 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family:"Darker Grotesque", sans-serif;
-}
-body{
-    background-color: burlywood;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-header{
+/* ================= HEADER Y NAV (IGUAL QUE LANDING PAGE) ================= */
+
+/* Estilos Base (Escritorio) */
+header {
     height: 15vh;
     background-color: #a88c67b8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative; /* Clave para el menú móvil */
 }
-.logoHeader{
+
+/* 1. Logo */
+.logoHeader {
     display: flex;
     justify-content: start;
-    width: 30vw;
+    width: 30vw; /* En PC ocupa el 30% */
     height: 100%;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
-.logoHeader img{
+.logoHeader img {
     height: 10vh;
-    width: 10vh;
+    width: auto;
 }
-.logoHeader a{
+.logoHeader a {
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
+    line-height: 1;
 }
-nav{
+
+/* 2. Nav (Escritorio) */
+nav {
     height: 100%;
-    width: 30vw;
+    width: 30vw; /* En PC ocupa el 30% */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     width: 100%;
-
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
-.logIn{
+
+/* 3. Login (Escritorio) */
+.logIn {
     display: flex;
     height: 100%;
-    width: 30vw;
+    width: 30vw; /* En PC ocupa el 30% */
     justify-content: end;
     gap: 20px;
     align-items: center;
-    margin-right: 5vw;
+    margin-right: 2rem;
 }
-.logIn a{
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-}
-.logIn button{
-    background-color: transparent;
-    border: 0px;
-    font-size: 1.7rem;
-    color: white;
-}
-.logIn img{
-    height: 8vh;
+.logIn a { text-decoration: none; font-size: 1.8rem; color: white; }
+.logIn button { background-color: transparent; border: 0; font-size: 1.5rem; color: white; }
+.logIn img { height: 6vh; }
 
-}
-.titulo{
-    border: solid #a88c67b8;
-    width: 80%;
-    border-radius: 5px;
-    background-color: rgb(208, 172, 125);
-    margin-top: 3rem;
-}
-.margen-extra{
-    margin-left: 6rem;
+
+/* ================= VERSIÓN MÓVIL / TABLET (MENOS DE 992px) ================= */
+@media (max-width: 992px) {
+    
+    header {
+        height: auto;
+        min-height: 12vh;
+        flex-wrap: wrap; /* Permite que el contenido fluya */
+        padding: 0.5rem 1rem;
+    }
+
+    /* En móvil, el logo y el menú se reparten el 50% cada uno */
+    .logoHeader {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .logoHeader img { height: 60px; }
+    .logoHeader a { font-size: 1.5rem; } /* Texto más pequeño o oculto si prefieres */
+
+    nav {
+        width: 50%;
+        justify-content: flex-end; /* Botón a la derecha */
+    }
+
+    /* ESTILO DEL MENÚ DESPLEGABLE */
+    nav ul {
+        flex-direction: column; /* Vertical */
+        background-color: #a88c67; /* Fondo Marrón */
+        position: absolute; /* Flota sobre el contenido */
+        top: 100%; 
+        left: 0;
+        width: 100%; 
+        padding: 1rem 0;
+        z-index: 9999;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    nav ul li a {
+        font-size: 1.5rem; 
+        padding: 10px 0;
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: static; 
+        width: 100%;
+    }
 }
