@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+/* 1. RESET UNIVERSAL (Esto elimina los bordes blancos por defecto) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+
+body {
+    background-color: burlywood; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    width: 100vw;
+    overflow-x: hidden; 
+}
+
+/* --- HEADER --- */
 header {
     height: 15vh;
     background-color: #a88c67b8;
@@ -16,10 +38,12 @@ header {
     align-items: center;
     gap: 1rem;
 }
+
 .logoHeader img {
     height: 10vh;
     width: auto;
 }
+
 .logoHeader a {
     text-decoration: none;
     font-size: 2.5rem;
@@ -34,6 +58,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -42,6 +67,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     font-size: 1.8rem;
@@ -57,33 +83,42 @@ nav ul li a {
     align-items: center;
     margin-right: 2rem;
 }
-.logIn a { 
-    text-decoration: none; 
-    font-size: 1.8rem; 
+
+.logIn a {
+    text-decoration: none;
+    font-size: 1.8rem;
     color: white;
 }
-.logIn button { 
+
+.logIn button {
     background-color: transparent;
-    border: 0; 
-    font-size: 1.5rem; 
-    color: white; 
+    border: 0;
+    font-size: 1.5rem;
+    color: white;
 }
+
 .logIn img {
-    height: 6vh; 
+    height: 6vh;
 }
+
 .background {
-    background-color: burlywood;
+    width: 100%;
 }
-.titulo{
+
+.titulo {
     border: solid #a88c67b8;
     border-radius: 5px;
     width: 80%;
     background-color: #c9a77a;
+    margin: 2rem auto; 
+    padding: 10px;
+}
 
+.margen-extra {
+    padding-bottom: 50px;
 }
 
 @media (max-width: 992px) {
-    
     header {
         height: auto;
         min-height: 12vh;
@@ -100,13 +135,12 @@ nav ul li a {
     }
     .logoHeader a { 
         font-size: 1.5rem;
-     } 
+    } 
 
     nav {
         width: 50%;
         justify-content: flex-end;
     }
-
 
     nav ul {
         flex-direction: column;
@@ -120,6 +154,7 @@ nav ul li a {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        text-align: center;
     }
 
     nav ul li a {
