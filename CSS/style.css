@@ -195,11 +195,89 @@ footer {
     height: 4rem;
 }
 
-
-
 @media (max-width: 992px) {
+    
+    
+    header {
+        height: auto;
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+
+    .logoHeader {
+        width: 50%; 
+        justify-content: flex-start;
+    }
+
+    nav {
+        width: 50%; 
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        background-color: #a88c67; 
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: 0 0 10px 10px; 
+        gap: 1rem; 
+        text-align: center;
+        
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    
+   
+    header {
+        position: relative;
+    }
+
+    
     .carrusel-img {
-        height: 500px;
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .adoptText h2, .donaText h2, .volunText h2 {
+        font-size: 3rem;
+    }
+    .adoptText p, .donaText p, .volunText p {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .adoptSection, .donaSection, .volunSection {
+        height: auto;
+        min-height: 60vh;
+        padding: 4rem 0;
+        flex-direction: column; 
+    }
+
+    .infoAdopt, .infoDona, .infoVolun {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .adoptSection img, .donaSection img, .volunSection img {
+        width: 80%;
+    }
+
+    
+    footer { height: auto; padding: 3rem 0; }
+    .contenedorFooter {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+    .datoscontacto, .InformaciónFooter, .idiomasFooter {
+        width: 45%; 
+        text-align: center;
+        margin: 0;
     }
 }
 
