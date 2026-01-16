@@ -37,10 +37,12 @@ header {
     align-items: center;
     gap: 1rem;
 }
+
 .logoHeader img {
     height: 10vh;
     width: auto;
 }
+
 .logoHeader a {
     text-decoration: none;
     font-size: 2.5rem;
@@ -55,6 +57,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -63,6 +66,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     font-size: 1.8rem;
@@ -78,10 +82,23 @@ nav ul li a {
     align-items: center;
     margin-right: 2rem;
 }
-.logIn a { text-decoration: none; font-size: 1.8rem; color: white; }
-.logIn button { background-color: transparent; border: 0; font-size: 1.5rem; color: white; }
-.logIn img { height: 6vh; }
 
+.logIn a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.logIn button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.logIn img {
+    height: 6vh;
+}
 
 @media (max-width: 992px) {
     header {
