@@ -78,9 +78,10 @@ nav ul li a{
 
 }
 .titulo{
-    border: solid rgb(194, 135, 7);
+    border: solid #a88c67b8;
+    width: 80%;
     border-radius: 5px;
-    background-color: blanchedalmond;
+    background-color: rgb(208, 172, 125);
     margin-top: 3rem;
 }
 .margen-extra{
