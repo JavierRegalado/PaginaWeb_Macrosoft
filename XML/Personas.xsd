@@ -30,10 +30,10 @@
                             <xs:element name="donante" type="xs:boolean"></xs:element>
                         </xs:sequence>
                         
-                        <xs:attribute name="dni">
+                       <xs:attribute name="dni">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="9"/>
+                                    <xs:maxLength value="9"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
