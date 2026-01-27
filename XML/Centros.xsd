@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="centro" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            
+                            <xs:element name="Localidad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="2"/>
+                                        <xs:maxLength value="50"/>
+                                        <xs:pattern value="[A-ZÑÁÉÍÓÚ][a-zñáéíóú\s]+"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="Duracion">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="Indefinida|[0-9]+ Años"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="IDDonativoCen" type="xs:positiveInteger"/>
+                            
+                        </xs:sequence>
+
+                        <xs:attribute name="IDcentro" use="required" type="xs:positiveInteger"/>
+                        
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="nombreEmpresa" type="xs:string" use="required"/>
+        </xs:complexType>
+
+        <xs:key name="PK_Centro">
+            <xs:selector xpath="centro"/>
+            <xs:field xpath="@IDcentro"/>
+        </xs:key>
+
+    </xs:element>
+
+</xs:schema>

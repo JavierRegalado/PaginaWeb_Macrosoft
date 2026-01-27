@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empresa nombreEmpresa = "Amigos peludos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<empresa nombreEmpresa = "Amigos peludos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Centros.xsd">
     <centro IDcentro = "1">
         <Localidad>Madrid</Localidad>
         <Duracion>Indefinida</Duracion>
