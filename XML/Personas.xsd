@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="usuario" type="xs:string"></xs:element>
+                            <xs:element name="contra" type="xs:string"></xs:element>
+                            <xs:element name="email" type="xs:string"></xs:element>
+                            <xs:element name="adoptante" type="xs:boolean"></xs:element>
+                            <xs:element name="voluntario" type="xs:boolean"></xs:element>
+                            <xs:element name="donante" type="xs:boolean"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="dni" type="xs:string"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="nombreEmpresa" type="xs:string"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

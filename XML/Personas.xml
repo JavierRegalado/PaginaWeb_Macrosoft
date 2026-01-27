@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empresa nombreEmpresa="Amigos Peludos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <persona>
-        
+<empresa nombreEmpresa="Amigos Peludos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Personas.xsd">
+    <persona dni="65432109Q">
+        <nombre>Quique Vela</nombre>
+        <usuario>quiquev</usuario>
+        <contra>LaMejorContraseña@</contra>
+        <email>quique.vela@email.com</email>
+        <adoptante>true</adoptante>
+        <voluntario>true</voluntario>
+        <donante>true</donante>
+    </persona>
+    <persona dni="67890123G">
+        <nombre>Gema Torres</nombre>
+        <usuario>gemat</usuario>
+        <contra>TodoParaEllos$@</contra>
+        <email>gema.torres@email.com</email>
+        <adoptante>true</adoptante>
+        <voluntario>true</voluntario>
+        <donante>true</donante>
+    </persona>
+    <persona dni="76543210R">
+        <nombre>Rosa Nieto</nombre>
+        <usuario>gemat</usuario>
+        <contra>PatitasFelices</contra>
+        <email>rosa.nieto@email.com</email>
+        <adoptante>true</adoptante>
+        <voluntario>false</voluntario>
+        <donante>false</donante>
+    </persona>
+    <persona dni="78901234H">
+        <nombre>Héctor Martín</nombre>
+        <usuario>hectorm</usuario>
+        <contra>AdoptaHoy@</contra>
+        <email>hector.martin@email.com</email>
+        <adoptante>true</adoptante>
+        <voluntario>false</voluntario>
+        <donante>false</donante>
+    </persona>
+    <persona dni="87654321S">
+        <nombre>Sonia Echevarria</nombre>
+        <usuario>soniae</usuario>
+        <contra>ComidaParaTodos#</contra>
+        <email>sonia.echevarria@email.com</email>
+        <adoptante>false</adoptante>
+        <voluntario>true</voluntario>
+        <donante>false</donante>
     </persona>
 </empresa>
