@@ -14,8 +14,15 @@
                             <xs:element name="voluntario" type="xs:boolean"></xs:element>
                             <xs:element name="donante" type="xs:boolean"></xs:element>
                         </xs:sequence>
-                        <xs:attribute name="dni" type="xs:string"></xs:attribute>
-                    </xs:complexType>
+                        
+                        <xs:attribute name="dni">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="9"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        </xs:complexType>
                 </xs:element>
             </xs:sequence>
             <xs:attribute name="nombreEmpresa" type="xs:string"></xs:attribute>
