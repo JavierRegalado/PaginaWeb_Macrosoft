@@ -8,8 +8,23 @@
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string"></xs:element>
                             <xs:element name="usuario" type="xs:string"></xs:element>
-                            <xs:element name="contra" type="xs:string"></xs:element>
-                            <xs:element name="email" type="xs:string"></xs:element>
+                            
+                            <xs:element name="contra">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="email">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
                             <xs:element name="adoptante" type="xs:boolean"></xs:element>
                             <xs:element name="voluntario" type="xs:boolean"></xs:element>
                             <xs:element name="donante" type="xs:boolean"></xs:element>
@@ -18,14 +33,15 @@
                         <xs:attribute name="dni">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:maxLength value="9"/>
+                                    <xs:pattern value="[0-9]{8}[A-Z]"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        </xs:complexType>
+
+                    </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="nombreEmpresa" type="xs:string"></xs:attribute>
+            <xs:attribute name="nombreEmpresa" type="xs:string" use="required"></xs:attribute>
         </xs:complexType>
     </xs:element>
 </xs:schema>
