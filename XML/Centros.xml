@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa nombreEmpresa = "Amigos peludos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <centro IDcentro = "1">
+        <Localidad>Madrid</Localidad>
+        <Duracion>Indefinida</Duracion>
+        <IDDonativoCen>1</IDDonativoCen>
+    </centro>
+    <centro IDcentro = "2">
+        <Localidad>Barcelona</Localidad>
+        <Duracion>Indefinida</Duracion>
+        <IDDonativoCen>3</IDDonativoCen>
+    </centro>
+    <centro IDcentro = "3">
+        <Localidad>Sevilla</Localidad>
+        <Duracion>5 Años</Duracion>
+        <IDDonativoCen>4</IDDonativoCen>
+    </centro>
+    <centro IDcentro = "4">
+        <Localidad>Valladolid</Localidad>
+        <Duracion>7 Años</Duracion>
+        <IDDonativoCen>8</IDDonativoCen>
+    </centro>
+    <centro IDcentro = "5">
+        <Localidad>Donostia</Localidad>
+        <Duracion>Indefinida</Duracion>
+        <IDDonativoCen>9</IDDonativoCen>
+    </centro>
+</empresa>
