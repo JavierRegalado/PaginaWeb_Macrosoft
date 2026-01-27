@@ -33,7 +33,7 @@
                         <xs:attribute name="dni">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value="[0-9]{8}[A-Z]"/>
+                                    <xs:pattern value="9"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
