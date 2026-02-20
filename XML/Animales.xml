@@ -1,37 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet  type="text/xsl" href="Animales.xslt"?>
 <animales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Animales.xsd">
-<animal idCentroAnimal="1" disponibilidad="1" idAnimal="1">
-<nombre>Luna</nombre>
-<edad>5</edad>
-<raza>Labrador</raza>
-<caracteristicas>Muy juguetona</caracteristicas>
-<necesidadesEspeciales/>
-</animal>
-<animal idCentroAnimal="1" disponibilidad="1" idAnimal="2">
-<nombre>Max</nombre>
-<edad>2</edad>
-<raza>Gato Siames</raza>
-<caracteristicas>Tranquilo</caracteristicas>
-<necesidadesEspeciales/>
-</animal>
-<animal idCentroAnimal="1" disponibilidad="1" idAnimal="3">
-<nombre>Rocky</nombre>
-<edad>8</edad>
-<raza>Pastor Alemán</raza>
-<caracteristicas>Protector</caracteristicas>
-<necesidadesEspeciales>Dieta especial</necesidadesEspeciales>
-</animal>
-<animal idCentroAnimal="1" disponibilidad="1" idAnimal="4">
-<nombre>Mia</nombre>
-<edad>1</edad>
-<raza>Gato Persa</raza>
-<caracteristicas>Perezosa</caracteristicas>
-<necesidadesEspeciales>Cepillado</necesidadesEspeciales>
-</animal>
-<animal idCentroAnimal="1" disponibilidad="1" idAnimal="5">
-<nombre>Kira</nombre>
-<edad>4</edad>
-<raza>Bichón</raza>
-<caracteristicas>Sociable</caracteristicas>
-<necesidadesEspeciales/>
-</animal>
+    <animal idCentroAnimal="1" disponibilidad="1" idAnimal="1">
+        <nombre>Luna</nombre>
+        <edad>5</edad>
+        <raza>Labrador</raza>
+        <caracteristicas>Muy juguetona</caracteristicas>
+        <necesidadesEspeciales>ninguna</necesidadesEspeciales>
+    </animal>
+    <animal idCentroAnimal="1" disponibilidad="1" idAnimal="2">
+        <nombre>Max</nombre>
+        <edad>2</edad>
+        <raza>Gato Siames</raza>
+        <caracteristicas>Tranquilo</caracteristicas>
+        <necesidadesEspeciales>ninguna</necesidadesEspeciales>
+    </animal>
+        <animal idCentroAnimal="1" disponibilidad="1" idAnimal="3">
+        <nombre>Rocky</nombre>
+        <edad>8</edad>
+        <raza>Pastor Alemán</raza>
+        <caracteristicas>Protector</caracteristicas>
+        <necesidadesEspeciales>Dieta especial</necesidadesEspeciales>
+    </animal>
+        <animal idCentroAnimal="1" disponibilidad="1" idAnimal="4">
+        <nombre>Mia</nombre>
+        <edad>1</edad>
+        <raza>Gato Persa</raza>
+        <caracteristicas>Perezosa</caracteristicas>
+        <necesidadesEspeciales>Cepillado</necesidadesEspeciales>
+    </animal>
+        <animal idCentroAnimal="1" disponibilidad="1" idAnimal="5">
+        <nombre>Kira</nombre>
+        <edad>4</edad>
+        <raza>Bichón</raza>
+        <caracteristicas>Sociable</caracteristicas>
+        <necesidadesEspeciales>ninguna</necesidadesEspeciales>
+    </animal>
 </animales>
