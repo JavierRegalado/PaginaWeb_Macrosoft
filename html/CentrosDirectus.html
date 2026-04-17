@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CentrosDirectus</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Darker Grotesque", sans-serif;
+        }
+
+        body {
+            background-color: burlywood; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh; 
+            width: 100vw;
+            overflow-x: hidden; 
+        }
+
+        header {
+            height: 15vh;
+            background-color: #a88c67b8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        .logoHeader { display: flex; justify-content: start; width: 30vw; height: 100%; align-items: center; gap: 1rem; }
+        .logoHeader img { height: 10vh; width: auto; }
+        .logoHeader a { text-decoration: none; font-size: 2.5rem; color: white; line-height: 1; }
+
+        nav { height: 100%; width: 30vw; display: flex; align-items: center; justify-content: center; }
+        nav ul { display: flex; list-style: none; width: 100%; justify-content: space-between; padding: 0; margin: 0; }
+        nav ul li a { text-decoration: none; font-size: 1.8rem; color: white; }
+
+        .logIn { display: flex; height: 100%; width: 30vw; justify-content: end; gap: 20px; align-items: center; margin-right: 2rem; }
+        .logIn a { text-decoration: none; font-size: 1.8rem; color: white; }
+        .logIn button { background-color: transparent; border: 0; font-size: 1.5rem; color: white; }
+        .logIn img { height: 6vh; }
+
+        .background { width: 100%; }
+        
+        .titulo {
+            border: solid #a88c67b8;
+            border-radius: 5px;
+            width: 80%;
+            background-color: #c9a77a;
+            margin: 2rem auto; 
+            padding: 10px;
+        }
+
+        .margen-extra { padding-bottom: 50px; }
+        
+        .crud-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-label { font-weight: 600; font-size: 1.2rem; }
+        .mensaje-sistema { font-style: italic; font-size: 1.1rem; margin-top: 10px; padding: 10px; border-radius: 5px; display: none; }
+
+        @media (max-width: 992px) {
+            header { height: auto; min-height: 12vh; flex-wrap: wrap; padding: 0.5rem 1rem; }
+            .logoHeader { width: 50%; justify-content: flex-start; }
+            .logoHeader img { height: 60px; }
+            .logoHeader a { font-size: 1.5rem; } 
+            nav { width: 50%; justify-content: flex-end; }
+            nav ul { flex-direction: column; background-color: #a88c67; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem 0; z-index: 9999; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; box-shadow: 0 5px 10px rgba(0,0,0,0.3); text-align: center; }
+            nav ul li a { font-size: 1.5rem; padding: 10px 0; display: block; }
+            .navbar-collapse { position: static; width: 100%; }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logoHeader">
+          <img src="../imagenes/logo_web.png" alt="Logo de la empresa">
+          <a class="nav-link fs-1" href="Index2.0.html">Amigos Peludos</a>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid justify-content-end"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 text-center"> 
+                      <li class="nav-item"><a class="nav-link fs-1" href="Catalogo_Animalaes.html">Adopta</a></li>
+                      <li class="nav-item"><a class="nav-link fs-1" href="FormularioDonación.html">Dona</a></li>
+                      <li class="nav-item"><a class="nav-link fs-1" href="Voluntariado.html">Voluntariado</a></li>
+                      <li class="nav-item d-lg-none mt-3 border-top pt-3"><a class="nav-link" href="#">EU | ES</a></li>
+                      <li class="nav-item d-lg-none"><a class="nav-link" href="Registro.html">Log In 👤</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="logIn d-none d-lg-flex">
+            <button>EU|ES</button>
+            <a href="Registro.html">Log In</a>
+            <img src="../imagenes/login.png" alt="Icono de usuario">
+        </div>
+    </header>
+
+    <div class="container-fluid background">
+        
+        <div class="container-fluid text-center mt-3 titulo">
+            <h1 class="text-white m-0" style="font-size: 2.5rem;">PANEL DE GESTIÓN INTERNA</h1>
+        </div>
+
+        <div class="container margen-extra mb-5">
+            
+            <div class="card crud-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Centros Registrados</h2>
+                    <div class="table-responsive" id="contenedor-tabla">
+                        <p class="text-muted text-center">Conectando con la base de datos central...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-12 col-lg-4">
+                    <div class="card crud-card h-100 border-top border-success border-4">
+                        <div class="card-body">
+                            <h3 class="text-success mb-3">Registrar</h3>
+                            <form id="formulario-insertar" onsubmit="insertarCentro(event)">
+                                <div class="mb-2">
+                                    <label class="form-label">ID Centro: *</label>
+                                    <input type="text" class="form-control" id="ins-id" required placeholder="Ej: CEN019">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Nombre: *</label>
+                                    <input type="text" class="form-control" id="ins-nombre" required placeholder="EJ: Refugio Esperanza">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Localidad: *</label>
+                                    <input type="text" class="form-control" id="ins-localidad" required placeholder="Badajoz">
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Capacidad maxima: *</label>
+                                    <input type="number" class="form-control" id="ins-capMax" required>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100 fs-5">Registrar</button>
+                            </form>
+                            <div id="msg-insertar" class="mensaje-sistema text-center mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="card crud-card h-100 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h3 class="text-primary mb-3">Actualizar</h3>
+                            <form id="formulario-actualizar" onsubmit="actualizarCentro(event)">
+                                <div class="mb-3">
+                                    <label class="form-label">ID del centro a cambiar: *</label>
+                                    <input type="text" class="form-control" id="upd-id" required placeholder="Ej: CEN001">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nueva nombre:</label>
+                                    <input type="number" class="form-control" id="upd-nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nueva localidad:</label>
+                                    <input type="text" class="form-control" id="upd-localidad">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nueva capacidad maxima:</label>
+                                    <input type="number" class="form-control" id="upd-capMax">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 fs-5">Actualizar</button>
+                            </form>
+                            <div id="msg-actualizar" class="mensaje-sistema text-center mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="card crud-card h-100 border-top border-danger border-4">
+                        <div class="card-body">
+                            <h3 class="text-danger mb-3">Borrar</h3>
+                            <form id="formulario-borrar" onsubmit="borrarCentro(event)">
+                                <div class="mb-4">
+                                    <label class="form-label">ID del Centro a eliminar: *</label>
+                                    <input type="text" class="form-control" id="del-id" required placeholder="Ej: CEN001">
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100 fs-5">Eliminar Definitivamente</button>
+                            </form>
+                            <div id="msg-borrar" class="mensaje-sistema text-center mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const token = "usJS1R-fKrJqQXvkqDm1wHVyMbN2U4B4";
+        const urlCentros = "http://localhost:8055/items/centros";
+        const headersComunes = {
+            "Content-Type": "application/json",
+            "Authorization" : `Bearer ${token}`
+        };
+
+        function mostrarMensaje(DivID, texto, esError = false){
+            const div = document.getElementById(divID);
+            div.style.display = "block";
+            div.innerHTML = text;
+            div.className = "alert mt-3" + (esError ? "alert-danger" : "alert-succes");
+        }
+
+        async function cargarCentros() {
+            const contenedor = document.getElementById('contenedor-tabla');
+            try {
+                const respuesta = await fetch (urlCentros, {method: 'GET', headers: headersComunes});
+                if (!respuesta.ok) throw new Error(`Error(${respuesta.status})`);
+
+                const resultado = await respuesta.json();
+                const centros = resultado.data;
+
+                if (centros.length === 0) {
+                    contenedor.innerHTML = '<div class="alert alert-info text-center fs-5"> No hay centros registrados en la base de datos.</div>';
+                    return;
+                }
+
+                let html = `<table class = "table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID centro</th>Nombre<th></th>
+                            <th>localidad</th><th>Capacidad maxima</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider fs-5">`;
+                centros.forEach(item => {
+                    html += `<tr>
+                        <td><strong>${item.IDcentro || '-'}</strong></td>
+                        <td>${item.Nombre || '-'}</td>
+                        <td>${item.Localidad || '-'}</td>
+                        <td>${item.CapacidadMaxima || '-'}</td>
+                    </tr>`; 
+                });
+                html += `<tbody><table>`;
+                    contenedor.innerHTML = html;
+            } catch (error){
+                contenedor.innerHTML =`<div class="alert alert-danger text center fs-5">⚠️ Error de conexión: ${error.message}</div>`
+            }
+            
+        }
+        async function insertarCentro(evento) {
+            const datosCentro = {
+                IDcentro: document.getElementById("ins-id").value,
+                Nombre: document.getElementById("ins-nombre").value,
+                Localidad: document.getElementById("ins-localidad").value,
+                CapacidadMaxima: document.getElementById("ins-capMax").value
+            };
+
+            mostrarMensaje("msg-insertar", "registrando...");
+            
+            try{
+                const respuesta = await fetch(urlCentros,{
+                    method: "POST", headers: headersComunes, body: JSON.stringify(datosCentro)
+                });
+                if (!respuesta.ok) { const jsonError = await respuesta.json(); throw new Error(jsonError.errors[0].message);}
+                document.getElementById("formulario-insertar").reset();
+                mostrarMensaje("msg-insertar", `✅ <strong>${datosCentro.nombreCen}</strong> registrado.`);
+                cargarCentros();
+            } catch (error) { mostrarMensaje("msg-insertar",  `⚠️ ${error.message}`, true); }
+        }
+
+        async function actualizarCentro(evento) {
+            evento.preventDefault();
+            const IDcentro = document.getElementById("upd-id").value;
+            const nuevoNombre = document.getElementById("upd-nombre").value;
+            const nuevaLocalidad = document.getElementById("upd-localidad").value;
+            const nuevaCapMax = document.getElementById("upd-capMax").value;
+            
+            const datosAActualizar = {};
+            if (nuevoNombre !== "") datosAActualizar.Nombre = nuevoNombre;
+            if (nuevaLocalidad !== "") datosAActualizar.Localidad = nuevaLocalidad;
+            if (nuevaCapMax !== "") datosAActualizar.CapacidadMaxima = parseInt(nuevaCapMax);
+
+            if (Object.keys(datosAActualizar).length === 0) {
+                mostrarMensaje("msg-actualizar", "⚠️ Rellena al menos un campo.", true);
+                return;
+        }
+
+        mostrarMensaje("msg-actualizar", "Actualizando...");
+
+        try {
+                const respuesta = await fetch(`${urlCentros}/${IDcentro}`, {
+                    method: "PATCH", headers: headersComunes, body: JSON.stringify(datosAActualizar)
+                });
+                if (!respuesta.ok) { const jsonError = await respuesta.json(); throw new Error(jsonError.errors[0].message); }
+                document.getElementById("formulario-actualizar").reset();
+                mostrarMensaje("msg-actualizar", `✅ <strong>${IDcentro}</strong> actualizado.`);
+                cargarAnimalesDesdeAPI();
+            } catch (error) { mostrarMensaje("msg-actualizar", `⚠️ ${error.message}`, true); }
+        }
+
+        async function borrarCentro(evento) {
+            evento.preventDefault();
+            const IDcentro = document.getElementById("del-id").value;
+
+            if (!confirm(`¿borrar a ${IDcentro}? esta acción no se puede deshacer.`)) return;
+
+            mostrarMensaje("msg-borrar", "Borrandoy...");
+
+            try {
+                const respuesta = await fetch (`${urlCentros}/${IDcentro}`, {
+                    method: "DELETE", headers: headersComunes
+                });
+                if (!respuesta.ok) { const jsonError = await respuesta.json(); throw new Error(jsonError.errors[0].message); }
+                document.getElementById("formulario-borrar").reset();
+                mostrarMensaje("msg-borrar", `✅ <strong>${idAnimal}</strong> eliminado.`);
+                cargarCentros();
+
+            } catch (error) { mostrarMensaje("msg-borrar", `⚠️ ${error.message}`, true); }
+        }
+
+        cargarCentros();
+    </script>
+</body>
+</html>
