@@ -17,6 +17,7 @@ body {
     overflow-x: hidden; 
 }
 
+
 .back {
     width: 100%;
     display: flex;
@@ -75,7 +76,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     form {
         width: 90%; 
         margin-top: 2rem;
