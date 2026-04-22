@@ -53,14 +53,14 @@ label {
     width: 100%; 
 }
 
-input, select, textarea, button {
+.back input,.back select,.back textarea,.back button {
     width: 100%; 
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     font-size: 1em;
-    color: black; 
+    color: rgb(253, 253, 253); 
 }
 
 
