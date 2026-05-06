@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Playfair+Display:wght@500;700&display=swap');
 
-/* 1. RESET UNIVERSAL (Esto elimina los bordes blancos por defecto) */
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +7,14 @@
     font-family: "Darker Grotesque", sans-serif;
 }
 
-
 body {
-    background-color: burlywood; 
+    background-color: burlywood;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* --- HEADER --- */
@@ -110,20 +108,116 @@ nav ul li a {
     border-radius: 5px;
     width: 80%;
     background-color: #c9a77a;
-    margin: 2rem auto; 
+    margin: 2rem auto;
     padding: 10px;
 }
 
 .margen-extra {
     padding-bottom: 50px;
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;
     color: white;
 }
 
+/* --- TARJETAS --- */
+.card {
+    background: #fffaf5;
+    border-radius: 20px !important;
+    border: 1.5px solid #e8d5b8 !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(180, 120, 60, 0.18) !important;
+}
+
+.card-img-top {
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3d2006;
+    margin-bottom: 4px;
+}
+
+.card-text {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 15px;
+    color: #7a6048 !important;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.btn-primary {
+    background: #c47b2b !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background 0.18s ease;
+}
+
+.btn-primary:hover {
+    background: #a35e18 !important;
+}
+
+.species-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255, 248, 237, 0.92);
+    border: 1px solid #d4a96a;
+    color: #7a4e1e;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 248, 237, 0.92);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e8d5b8;
+    color: #c47b2b;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    z-index: 1;
+}
+
+.heart-btn:hover,
+.heart-btn.liked {
+    background: #c47b2b;
+    color: #fff9f0;
+}
+
+/* --- RESPONSIVE --- */
 @media (max-width: 992px) {
     header {
         height: auto;
@@ -136,12 +230,14 @@ a{
         width: 50%;
         justify-content: flex-start;
     }
-    .logoHeader img { 
-        height: 60px; 
+
+    .logoHeader img {
+        height: 60px;
     }
-    .logoHeader a { 
+
+    .logoHeader a {
         font-size: 1.5rem;
-    } 
+    }
 
     nav {
         width: 50%;
@@ -152,25 +248,25 @@ a{
         flex-direction: column;
         background-color: #a88c67;
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 0;
-        width: 100%; 
+        width: 100%;
         padding: 1rem 0;
         z-index: 9999;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         text-align: center;
     }
 
     nav ul li a {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         padding: 10px 0;
         display: block;
     }
 
     .navbar-collapse {
-        position: static; 
+        position: static;
         width: 100%;
     }
 }
